@@ -1,4 +1,5 @@
 // declare a variable
+
 #include <stdio.h>
 int main() {
   int _a = 7;
@@ -6,7 +7,7 @@ int main() {
   int _a_var = 10;
 
   // Type of constant
-  // inter constant
+  // integer constant
   // real constant
   // character constanct
   int number = 7;
@@ -169,11 +170,49 @@ int main() {
   } while (i < 5);
 
   // for loop:
-  for (int i = 0; i < 5; i++)
-  {
+  for (int i = 0; i < 5; i++) {
     printf("The value of i is %d\n", i);
   }
-   
+
+  // Break statement
+  int i = 5;
+  while (i = 0) {
+    // if i == 5 break out of this loop
+    if (i == 5) {
+      break;
+    }
+    printf("The vaule of i is %d\n", i);
+    i++;
+  }
+
+  for (int i = 0; i < 100; i++) {
+    printf("%d\n", i);
+    if (i == 5) {
+      break;
+    }
+  }
+
+  // continue statement: used to immediately move to the next iteration of the
+  // loop stop the current iteration but don't stop the loop
+  for (int i = 0; i < 7; i++) {
+    if (i == 3) {
+      continue;
+    }
+    printf("The value of i is %d\n", i);
+  }
+
+  // function: is a block of code which performs a particular task.
+  /* funcrion call: infroms the compilor to execute the fuinction body at the
+   time the call is made */
+  display();
+
+  /* function prototype: a way to tell the compilor about the function we are
+   going to define in the program */
+  void display1(int, float, int);
 
   return 0;
 }
+
+/* function definition: it contains the exact set of instructions which are
+ executed during the function call. */
+void display() { printf("Hello World"); }
