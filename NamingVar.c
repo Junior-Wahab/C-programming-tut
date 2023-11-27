@@ -164,6 +164,7 @@ int main() {
   /* do while loop: This loop will execute the code block once, before checking
   if the condition is true, then it will repeat the loop as long as the
   condition is true. */
+  // break statement completely exist the loop
   int i = 1;
   do {
     printf("The value of i is %d", i);
