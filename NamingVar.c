@@ -212,8 +212,13 @@ int main() {
   void display1(int, float, int);
 
   /*
-
+  Pointer is a vaeriable which stores the address of another variable
   */
+  /*
+   & - returns the address of a variable
+  */
+  int a = 8;
+  printf("The address of a is %u", &a); /* address u */
 
   return 0;
 }
